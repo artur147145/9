@@ -70,8 +70,13 @@ body {
 
 
 .gallery__item {
+
     width: 330px;
     position: relative;
+}
+
+.gallery__item:hover .text_img {
+    display: block;
 }
 
 .image {
@@ -111,4 +116,25 @@ body {
     position: absolute;
     right: 27px;
     bottom: 25px;
+}
+
+.text_img {
+    color: white;
+    position: absolute;
+    left: 35px;
+    top: 200px;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    display: none;
+
+    
+}
+
+.text_img::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.493);
+    width: 100%;
+    height: 100%;
 }
